@@ -1,4 +1,5 @@
 const express = require('express');
+const winston = require('winston');
 
 const movie = require('./controller/movie.controller')
 const review = require('./controller/review.contoller')
@@ -45,6 +46,6 @@ app.use('/api/user', user);
 
 
 app.listen(3001, function() {
-    print('starting')
+    winston.log('info', '-------server start----------');
     console.log('Starting server');
 });
