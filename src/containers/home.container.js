@@ -10,12 +10,23 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="ui segment">
+            <div>
+                <div className="ui segment">
                 <h3 class="text-center"><b>Welcome to Our Movie Review Website!</b></h3>
                 <div class="text-center">
                     <img class="img-fluid" src="https://www.midlothianlibrary.org/sitemedia/images/BooksandMedia/moviereview.jpg"
                          alt="Responsive image" />
                 </div>
+                </div>
+
+                <div className="ui raised very padded text container segment">
+                    <div className="text-center">
+                        <img className="img-fluid"
+                             src="/source.gif"
+                             alt="Responsive image" height="700" width="800" />
+                    </div>
+                </div>
+
             </div>
 
         );

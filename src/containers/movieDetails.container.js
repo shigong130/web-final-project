@@ -73,25 +73,25 @@ class MovieDetails extends React.Component {
 
             return(
                 <div className="ui segment">
-                    <div className="ui form">
-                        <div className="field">
+                    <div>
+                        <div>
                             <div className="ui center aligned container">
-                                <label>
+
                                     <h5 className="ui center aligned container"> Post a new movie review? </h5>
-                                </label>
-                                <label>
+
+
                                     <form>
-                                        <div className="ui center aligned container">
-                                        <textarea className="ui center aligned container" value={this.state.comments} rows="4" cols="50"
+                                        <div>
+                                        <textarea value={this.state.comments} rows="4" cols="50"
                                                   onChange={this.handleCommentChange} />
-                                            <input className="ui toggle button active" type="button" value="Submit Review" onClick={() => {
+                                            <input className="ui toggle button active" type="button" value="Submit Review"  style={{margin:"20px"}} onClick={() => {
                                                 this.checkAddFavEligibility().then(r => {if(!r) return null;
                                                     this.props.postReview(review),  window.alert('Review Post Successful!'),  location.reload();});}
                                             } />
                                         </div>
                                     </form>
-                                </label>
-                                <label>
+
+
                                     <div className="ui center aligned container">
                                         <button className="ui toggle button active" disabled={this.props.inFlight}
                                                 onClick={() => {this.checkAddFavEligibility()
@@ -99,7 +99,7 @@ class MovieDetails extends React.Component {
                                                         this.props.updateFav({favouriteMovies: data}), window.alert('Added to your personal favourite list!')});}
                                                 }> Add to favourite </button>
                                     </div>
-                                </label>
+
                             </div>
                         </div>
                     </div>
