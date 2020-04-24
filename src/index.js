@@ -21,7 +21,7 @@ import MovieDetails from './containers/movieDetails.container'
 // import LoggedInComponent from './components/loggedin.component'
 
 const userStore = createStore(reducers, applyMiddleware(thunkMiddleware));
-const hostUrl = window.location.href;
+const hostUrl = "hhttps://shi-gong-web-final.herokuapp.com"
 const loginUrl = hostUrl + "/login"
 const registerUrl = hostUrl + "/register"
 const profileUrl = hostUrl + "/profile"
