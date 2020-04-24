@@ -42,13 +42,13 @@ function fetchReview(
                 requestStatus: "SENDING",
                 inFlight: true,
             });
-        case "RESPONSE_GET_MOVIE_REVIEW":
+        case "RESPONSE_GET_REVIEW_ERROR":
             return Object.assign({}, state, {
                 requestStatus: "ERROR",
                 inFlight: false,
                 error: action.error
             });
-        case "RESPONSE_GET_MOVIE_REVIEW":
+        case "RESPONSE_GET_REVIEW_SUCCESS":
             return Object.assign({}, state, {
                 requestStatus: "SUCCESS",
                 inFlight: false,

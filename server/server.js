@@ -45,5 +45,6 @@ app.use('/api/user', user);
 
 
 app.listen(3001, function() {
+    print('starting')
     console.log('Starting server');
 });

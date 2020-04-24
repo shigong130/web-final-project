@@ -28,14 +28,14 @@ function requestGetReview() {
 
 function receiveGetReviewSuccess(res) {
     return {
-        type: "RESPONSE_GET_MOVIE_REVIEW",
+        type: "RESPONSE_GET_REVIEW_SUCCESS",
         res
     }
 }
 
 function receiveGetReviewError(error) {
     return {
-        type: "RESPONSE_GET_MOVIE_REVIEW",
+        type: "RESPONSE_GET_REVIEW_ERROR",
        error
     }
 }
