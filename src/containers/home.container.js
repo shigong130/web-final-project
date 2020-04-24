@@ -14,7 +14,7 @@ class Home extends React.Component {
                 <div className="ui segment">
                 <h4 className="text-center"><b>Welcome to Our Movie Review Website!</b></h4>
                 <div className="text-center">
-                    <img class="img-fluid" src="https://www.midlothianlibrary.org/sitemedia/images/BooksandMedia/moviereview.jpg"
+                    <img className="img-fluid" src="https://www.midlothianlibrary.org/sitemedia/images/BooksandMedia/moviereview.jpg"
                          alt="Responsive image" height="50" width="300"/>
                 </div>
                 </div>
