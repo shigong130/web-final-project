@@ -32,6 +32,7 @@ class Register extends React.Component {
                 if (res.status === 200) {
                     this.setState({loggedIn: true});
                 } else {
+                    console.log('logged in check: '+ JSON.stringify(res.error));
                     throw new Error(res.error);
                 }
             })

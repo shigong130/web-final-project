@@ -172,6 +172,7 @@ export function register(email, password) {
                     return response;
                 },
                 error => {
+                    console.log(error);
                     dispatch(registerFailure(error));
                     return error.response.data;
             }
