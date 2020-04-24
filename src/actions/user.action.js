@@ -163,10 +163,10 @@ export function login(user) {
     }
 }
 
-export function register(email, password) {
+export function register(email, password, isAdministrator) {
     return function (dispatch) {
         dispatch(registerAttempt());
-        return Axios.post('/api/user/', {email, password})
+        return Axios.post('/api/user/', {email, password, isAdministrator})
             .then(response => {
                     dispatch(registerSuccess(response.data));
                     return response;

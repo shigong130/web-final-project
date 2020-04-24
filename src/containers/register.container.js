@@ -7,7 +7,7 @@ import Axios from "axios";
 class Register extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {email: '', password: '', validatePassword: '', loggedIn: false};
+        this.state = {email: '', password: '', validatePassword: '', loggedIn: false, isAdministrator: true};
     }
 
     handleChange(event, value) {
@@ -46,7 +46,7 @@ class Register extends React.Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (this.props.valid.success) {
 
-            this.props.register(this.state.email, this.state.password).then(response => {
+            this.props.register(this.state.email, this.state.password, this.isAdministrator).then(response => {
                 if(response.data){
                     window.alert('Great! ' + response.data.email + ' is registered successful!')
                 }else{
