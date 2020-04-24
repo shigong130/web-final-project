@@ -12,10 +12,10 @@ class Home extends React.Component {
         return (
             <div>
                 <div className="ui segment">
-                <h3 class="text-center"><b>Welcome to Our Movie Review Website!</b></h3>
+                <h4 class="text-center"><b>Welcome to Our Movie Review Website!</b></h4>
                 <div class="text-center">
                     <img class="img-fluid" src="https://www.midlothianlibrary.org/sitemedia/images/BooksandMedia/moviereview.jpg"
-                         alt="Responsive image" height="100" width="300"/>
+                         alt="Responsive image" height="50" width="300"/>
                 </div>
                 </div>
 
@@ -23,7 +23,7 @@ class Home extends React.Component {
                     <div className="text-center">
                         <img className="img-fluid"
                              src="/source.gif"
-                             alt="Responsive image" height="500" width="300" />
+                             alt="Responsive image" height="400" width="300" />
                     </div>
                 </div>
 
