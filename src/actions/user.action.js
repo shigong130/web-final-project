@@ -173,6 +173,7 @@ export function register(email, password) {
                 },
                 error => {
                     console.log(error);
+                    print( 'register error : ' + JSON.stringify(error));
                     dispatch(registerFailure(error));
                     return error.response.data;
             }
