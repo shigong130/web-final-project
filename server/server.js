@@ -14,7 +14,7 @@ const cookieParse = require('cookie-parser')
 // Make sure MongoDB is running!
 
 
-const mongoEndpoint = 'mongodb+srv://shigong130:Sl130719@cluster-rqyjb.mongodb.net/test?retryWrites=true&w=majority ||mongodb://127.0.0.1/movie_app';
+const mongoEndpoint = process.env.MONGODB_URI ||'mongodb://127.0.0.1/movie_app';
 // useNewUrlParser is not required, but the old parser is deprecated
 mongoose.connect(mongoEndpoint, { useNewUrlParser: true });
 // Get the connection string
