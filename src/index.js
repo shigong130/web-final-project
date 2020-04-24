@@ -35,12 +35,13 @@ const loginUrl = hostUrl + "/login"
 const registerUrl = hostUrl + "/register"
 const profileUrl = hostUrl + "/profile"
 const movieSearchUrl = hostUrl + "/movie-search"
+const homeUrl = hostUrl + "/home"
 
 ReactDOM.render(
     <Provider store={userStore}>
         <BrowserRouter>
             <Navbar collapseOnSelect expand="lg" bg="warning" variant="light">
-                <Navbar.Brand style={{color:'black'}} href="home">MovieReviews</Navbar.Brand>
+                <Navbar.Brand style={{color:'black'}} href={homeUrl}>MovieReviews</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
