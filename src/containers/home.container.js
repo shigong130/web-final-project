@@ -23,7 +23,7 @@ class Home extends React.Component {
                     <div className="text-center">
                         <img className="img-fluid"
                              src="/source.gif"
-                             alt="Responsive image" height="700" width="800" />
+                             alt="Responsive image" height="500" width="300" />
                     </div>
                 </div>
 
