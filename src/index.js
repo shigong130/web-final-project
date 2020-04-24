@@ -39,7 +39,7 @@ const movieSearchUrl = hostUrl + "/movie-search"
 ReactDOM.render(
     <Provider store={userStore}>
         <BrowserRouter>
-            <Navbar collapseOnSelect expand="lg" bg="warning" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="warning" variant="light">
                 <Navbar.Brand style={{color:'black'}} href="home">MovieReviews</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
