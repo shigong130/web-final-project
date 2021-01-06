@@ -7,7 +7,7 @@
     "node": "8.9.x"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.4.1",
     "connect-mongo": "^3.2.0",
